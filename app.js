@@ -1,8 +1,6 @@
-const USD = 300;
 const pesoArg = document.getElementById('number');
 const button = document.getElementById('submit')
 const final = document.getElementById('final')
-
 let precioUSD;
 
 fetch('https://api.bluelytics.com.ar/v2/latest')
@@ -13,7 +11,7 @@ fetch('https://api.bluelytics.com.ar/v2/latest')
 const calcularPesoAUsd = (event) => {
     event.preventDefault()
     calculo = pesoArg.value / precioUSD
-    final.innerHTML = `${pesoArg.value} ARG =  ${calculo.toFixed(2)} USD`;
+    final.innerHTML = `${pesoArg.value} ARG =  ${calculo.toFixed(3)} USD`;
 }
 
 button.addEventListener('click', calcularPesoAUsd)
