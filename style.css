@@ -66,6 +66,10 @@ form button:hover {
     font-size: 1rem;
 }
 
+#final {
+    font-size: 1.5rem;
+}
+
 input[type=number] { -moz-appearance:textfield; }
 
 
@@ -73,7 +77,16 @@ input[type=number] { -moz-appearance:textfield; }
     form {
         height: 400px;
     }
+    form h3 {
+        font-size: 1.2rem;
+    }
+    .pesos label {
+        font-size: 1.2rem;
+    }
     .pesos input {
         width: 100%;
+    }
+    #final {
+        font-size: 1.2rem;
     }
 }
